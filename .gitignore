@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local development settings
+*.env
+
+# Dependency directories
+venv/
+env/
+env3/
+env37/
+env38/
+.env
+env.bak/
+.Python
+lib/
+python*.egg-info/
+dist/
+build/
+
+# Editor-specific files
+# Visual Studio Code
+.vscode/
+*.code-workspace
+tempCodeRunnerFile*
+
+# PyCharm
+.idea/
+
+# Text editor swap files
+*.swp
+*.swo
+*.swn
+*.swm
+*.swl
+*.swk
+*.swp
+
+# Backup files
+*~
+*.bak
+
+# Playground Test files
+test*
