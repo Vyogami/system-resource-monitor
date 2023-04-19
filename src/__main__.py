@@ -1,5 +1,5 @@
-import psutil
 import time
+import psutil
 import streamlit as st
 import pandas as pd
 
