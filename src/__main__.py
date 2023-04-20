@@ -23,7 +23,6 @@ class SystemResourceMonitor:
         :param self: Represent the instance of the class
         :param interval: Set the time interval between each data point
         :return: The following:
-        :doc-author: Trelent
         """
 
         self.interval = interval
@@ -60,7 +59,6 @@ class SystemResourceMonitor:
         :param column: Specify the column in which to create the chart
         :param title: Name the chart
         :return: A chart object
-        :doc-author: Trelent
         """
         column.write(title)
         chart = column.line_chart(pd.DataFrame(columns=['Time', title]))
@@ -74,7 +72,6 @@ class SystemResourceMonitor:
 
         :param self: Represent the instance of the class
         :return: A none object
-        :doc-author: Trelent
         """
         while True:
             current_time = pd.Timestamp.now()
@@ -113,7 +110,6 @@ class SystemResourceMonitor:
 
         :param self: Represent the instance of the class
         :return: The cpu usage in percent
-        :doc-author: Trelent
         """
         return psutil.cpu_percent()
 
@@ -123,7 +119,6 @@ class SystemResourceMonitor:
 
         :param self: Represent the instance of the class
         :return: The percentage of the total memory used by the system
-        :doc-author: Trelent
         """
         return psutil.virtual_memory().percent
 
@@ -133,7 +128,6 @@ class SystemResourceMonitor:
 
         :param self: Represent the instance of the class
         :return: The disk usage in percentage
-        :doc-author: Trelent
         """
         return psutil.disk_usage('/').percent
 
@@ -143,7 +137,6 @@ class SystemResourceMonitor:
 
         :param self: Represent the instance of the class
         :return: The total network bandwidth usage in gb
-        :doc-author: Trelent
         """
         network_stats = psutil.net_io_counters()
         # In GB
@@ -160,7 +153,6 @@ class SystemResourceMonitor:
         :param self: Represent the instance of the class
         :param new_row: Add a new row to the dataframe
         :return: A dataframe
-        :doc-author: Trelent
         """
         self.resource_df = pd.concat(
             [self.resource_df, new_row], ignore_index=True)
@@ -179,7 +171,6 @@ class SystemResourceMonitor:
         :param current_time: Set the time of the data point
         :param value: Update the chart with new data
         :return: The chart_data dataframe
-        :doc-author: Trelent
         """
         chart_data = pd.concat([chart_data, pd.DataFrame(
             {'Time': current_time, chart_data.columns[1]: value}, index=[0])], ignore_index=True)
