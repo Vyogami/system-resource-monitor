@@ -41,9 +41,17 @@ The following packages are required to run the program:
 
 These packages can be installed using pip or conda, as described in the "Getting Started" section.
 
-## Contributions
+## Contributing
 
-Contributions are welcome! If you would like to contribute to this project, please open a pull request.
+We welcome contributions to Python Forge from the community. If you would like to contribute, please follow these steps:
+
+1. Fork this repository
+2. Create a new branch (`git checkout -b feature/my-feature`)
+3. Make your changes and commit them (`git commit -am 'Add my feature'`)
+4. Push to the branch (`git push origin feature/my-feature`)
+5. Open a pull request
+
+Please make sure your code follows the [PEP 8](https://www.python.org/dev/peps/pep-0008/) style guide and includes any necessary documentation or tests.
 
 ## License
 
