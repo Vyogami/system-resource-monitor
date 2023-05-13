@@ -43,7 +43,7 @@ These packages can be installed using pip or conda, as described in the "Getting
 
 ## Contributing
 
-We welcome contributions to Python Forge from the community. If you would like to contribute, please follow these steps:
+We welcome contributions from the community. If you would like to contribute, please follow these steps:
 
 1. Fork this repository
 2. Create a new branch (`git checkout -b feature/my-feature`)
